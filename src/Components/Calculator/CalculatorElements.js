@@ -73,13 +73,19 @@ export const Input = styled.input`
     margin-bottom: 1.5rem;
 `;
 
+export const Img = styled.img`
+
+`;
+
 export const TipSection = styled.div`
     width: 100%;
     margin-bottom: 1.5rem;
 `;
 
 export const ButtonWrapper = styled.div`
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 export const Button = styled.button`
@@ -92,6 +98,18 @@ export const Button = styled.button`
     font-size: 1.25rem;
     padding: .25rem 3rem;
     cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    
+    &:hover {
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+    }
+
+    &:focus {
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
 `;
 
 export const PeopleSection = styled.div`
@@ -147,4 +165,8 @@ export const ResultButton = styled.button`
     margin-top: 1.75rem;
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover {
+        background-color: hsl(185, 41%, 84%);
+    }
 `;

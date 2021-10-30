@@ -1,6 +1,6 @@
 import React from 'react';
 import { CalculatorContainer, CalculatorWrapper, CalculatorHeader, Title, CalculatorBody, BodyWrapper,
-BodyHeader, Label, Input, TipSection, ButtonWrapper, Button, PeopleSection, Results, ResultsWrapper,
+BodyHeader, Label, Input,Img, TipSection, ButtonWrapper, Button, PeopleSection, Results, ResultsWrapper,
 Section, SectionLabel, Measure, Amount, ResultButton } from './CalculatorElements';
 
 const Calculator = () => {
@@ -14,7 +14,8 @@ const Calculator = () => {
                     <BodyWrapper>
                         <BodyHeader>
                             <Label>Bill</Label>
-                            <Input></Input>
+                            <Input>
+                            </Input>
                         </BodyHeader>
                         <TipSection>
                             <Label>Select Tip %</Label>
