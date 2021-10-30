@@ -35,19 +35,19 @@ const Calculator = () => {
                             <ResultsWrapper>
                                 <Section>
                                     <SectionLabel>
-                                        <Label></Label>
-                                        <Measure></Measure>
+                                        <Label>Tip Amount</Label>
+                                        <Measure>/ person</Measure>
                                     </SectionLabel>
-                                    <Amount></Amount>
+                                    <Amount>$4.27</Amount>
                                 </Section>
                                 <Section>
                                     <SectionLabel>
-                                        <Label></Label>
-                                        <Measure></Measure>
+                                        <Label>Total</Label>
+                                        <Measure>/ person</Measure>
                                     </SectionLabel>
-                                    <Amount></Amount>
+                                    <Amount>$32.79</Amount>
                                 </Section>
-                                <ResultButton></ResultButton>
+                                <ResultButton>Reset</ResultButton>
                             </ResultsWrapper>
                         </Results>
                     </BodyWrapper>

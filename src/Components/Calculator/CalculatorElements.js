@@ -75,6 +75,7 @@ export const Input = styled.input`
 
 export const TipSection = styled.div`
     width: 100%;
+    margin-bottom: 1.5rem;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -90,6 +91,7 @@ export const Button = styled.button`
     margin: 10px;
     font-size: 1.25rem;
     padding: .25rem 3rem;
+    cursor: pointer;
 `;
 
 export const PeopleSection = styled.div`
@@ -97,15 +99,25 @@ export const PeopleSection = styled.div`
 `;
 
 export const Results = styled.div`
-
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
 `;
 
 export const ResultsWrapper = styled.div`
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
 `;
 
 export const Section = styled.div`
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 `;
 
 export const SectionLabel = styled.div`
@@ -113,13 +125,26 @@ export const SectionLabel = styled.div`
 `;
 
 export const Measure = styled.p`
-
+    color: hsl(185, 41%, 84%);
 `;
 
 export const Amount = styled.p`
-
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 1.75rem;
 `;
 
 export const ResultButton = styled.button`
-
+    font-family: 'Space Mono', monospace;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 5px;
+    padding: .5rem;
+    margin-top: 1.75rem;
+    text-transform: uppercase;
+    cursor: pointer;
 `;
