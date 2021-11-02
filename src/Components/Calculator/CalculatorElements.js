@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 export const CalculatorContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: hsl(185, 41%, 84%);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width:660px) {
+        width: 100vw;
+        height: 100vh;
+    }
 `;
 
 export const CalculatorWrapper = styled.div`
@@ -19,24 +24,36 @@ export const CalculatorWrapper = styled.div`
 `;
 
 export const CalculatorHeader = styled.div`
-    width: 100%;
+    width: 7rem;
     height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 660px) {
+        height: 170px;
+    }
 `;
 
 export const Title = styled.h1`
     text-transform: uppercase;
     color: hsl(186, 14%, 43%);
+    letter-spacing: 10px;
+    word-break: break-all;
+    font-size: 1.5rem;
 `;
 
 export const CalculatorBody = styled.div`
     width: 100%;
     background-color: white;
-    flex: 1 1 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    @media screen and (min-width: 660px) {
+        width: 70%;
+        height: 60%;
+        border-radius: 20px;
+    }
 `;
 
 export const BodyWrapper = styled.div`
@@ -46,7 +63,24 @@ export const BodyWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+
+    @media screen and (min-width: 660px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
+
+export const FirstHalf = styled.div`
+    @media screen and (min-width: 660px) {
+        height: 100%;
+        width: 48%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+`
 
 export const BodyHeader = styled.div`
     width: 100%;
@@ -71,6 +105,12 @@ export const Input = styled.input`
     padding: 1rem;
     text-align: right;
     margin-bottom: 1.5rem;
+    outline: none;
+    border-radius: 5px;
+
+    &:focus {
+        border: 2px solid hsl(172, 67%, 45%);
+    }
 `;
 
 export const Img = styled.img`
@@ -86,6 +126,11 @@ export const ButtonWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
+
+    @media screen and (min-width: 660px) {
+        
+    }
 `;
 
 export const Button = styled.button`
@@ -100,6 +145,7 @@ export const Button = styled.button`
     cursor: pointer;
     border-radius: 5px;
     width: 150px;
+    text-align: center;
     
     &:hover {
         background-color: hsl(185, 41%, 84%);
@@ -110,16 +156,34 @@ export const Button = styled.button`
         background-color: hsl(172, 67%, 45%);
         color: hsl(183, 100%, 15%);
     }
+
+    @media screen and (min-width: 660px) {
+        width: 125px;
+    }
 `;
 
 export const PeopleSection = styled.div`
     width: 100%;
 `;
 
+export const SecondHalf = styled.div`
+    width: 100%;
+
+    @media screen and (min-width: 660px) {
+        height: 100%;
+        width: 48%;
+    }
+`;
+
 export const Results = styled.div`
     width: 100%;
     background-color: hsl(183, 100%, 15%);
     border-radius: 15px;
+
+    @media screen and (min-width: 660px) {
+        height: 100%;
+        margin-top: -16px;
+    }
 `;
 
 export const ResultsWrapper = styled.div`
@@ -130,12 +194,20 @@ export const ResultsWrapper = styled.div`
     align-items: center;
     padding: 1rem;
     margin-top: 1rem;
+
+    @media screen and (min-width: 660px) {
+        padding: 2.5rem;
+    }
 `;
 
 export const Section = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 660px) {
+        margin-bottom: 2rem;
+    }
 `;
 
 export const SectionLabel = styled.div`
@@ -168,5 +240,9 @@ export const ResultButton = styled.button`
 
     &:hover {
         background-color: hsl(185, 41%, 84%);
+    }
+
+    @media screen and (min-width:660px) {
+        margin-top: auto;
     }
 `;
