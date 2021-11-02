@@ -89,7 +89,7 @@ export const BodyHeader = styled.div`
 `;
 
 export const Label = styled.p`
-    color: hsl(186, 14%, 43%);
+    color: ${({darkBg}) => (darkBg ? 'hsl(0, 0%, 100%)' : 'hsl(186, 14%, 43%)')} ;
     font-weight: 700;
 `;
 
@@ -155,6 +155,29 @@ export const Button = styled.button`
     &:focus {
         background-color: hsl(172, 67%, 45%);
         color: hsl(183, 100%, 15%);
+    }
+
+    @media screen and (min-width: 660px) {
+        width: 125px;
+    }
+`;
+
+export const CustomTip = styled.input`
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border: none;
+    margin: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    outline: none;
+
+
+    &:focus {
+        border: 2px solid hsl(172, 67%, 45%);
     }
 
     @media screen and (min-width: 660px) {
