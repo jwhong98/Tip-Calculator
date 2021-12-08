@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { CalculatorContainer, CalculatorWrapper, CalculatorHeader, Title, CalculatorBody, BodyWrapper,
-FirstHalf, BodyHeader, Label, Input,Img, TipSection, ButtonWrapper, Button, CustomTip, PeopleSection, SecondHalf, Results,
+FirstHalf, BodyHeader, Label, Input, TipSection, ButtonWrapper, Button, CustomTip, PeopleSection, SecondHalf, Results,
 ResultsWrapper, Section, SectionLabel, Measure, Amount, ResultButton } from './CalculatorElements';
 
 const Calculator = () => {

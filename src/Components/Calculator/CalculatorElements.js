@@ -113,10 +113,6 @@ export const Input = styled.input`
     }
 `;
 
-export const Img = styled.img`
-
-`;
-
 export const TipSection = styled.div`
     width: 100%;
     margin-bottom: 1.5rem;
